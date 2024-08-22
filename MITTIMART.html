@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Mitti Mart Pitch Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #420652;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            font-weight: 600;
+            color: #6f227a;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #6f227a;
+            margin-bottom: 25px;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #E7F9F9;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #6f227a;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #e7d6f5;
+        }
+
+        .details {
+            display: none;
+            padding-top: 20px;
+            text-align: left;
+        }
+
+        .details.active {
+            display: block;
+        }
+
+        .back-button {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #6f227a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #723aa6;
+        }
+
+        .back-button.active {
+            display: inline-block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MittiMart Pitch Deck</h1>
+
+        <div id="welcome-message">
+            <h2>Welcome to Our Website</h2>
+            <img src="Welcome .jpeg" alt="Welcome Image">
+        </div>
+
+        <ul id="key-points" style="display: none;">
+            <li onclick="showDetails('aboutus')">About Us</li>
+            <li onclick="showDetails('problem')">Problem</li>
+            <li onclick="showDetails('solution')">Solution</li>
+            <li onclick="showDetails('market')">Market Size & Opportunity</li>
+            <li onclick="showDetails('team')">Team</li>
+            <li onclick="showDetails('competition')">Competition</li>
+        </ul>
+
+        <!-- Detail Sections -->
+        </div>
+		
+        <div id="aboutus" class="details">
+            <h2>About Us</h2>
+            <img src="pakistan.jpg" alt="about us Image">
+            <p>Welcome to Mitti Mart, your trusted online grocery store exclusively offering the finest Pakistan-made products. Our name, "Mitti Mart," is inspired by the rich soil of Pakistan, symbolizing the authenticity and purity of the local produce and goods we bring to your doorstep. We are dedicated to supporting local artisans and farmers, ensuring that every product on our platform is crafted with care and pride in Pakistan. At Mitti Mart, we believe in ethical sourcing and proudly offer a wide range of groceries free from boycotted products, allowing you to shop with confidence and a clear conscience. Join us in celebrating the rich heritage and vibrant flavors of Pakistan, all from the comfort of your home.</p>
+        </div>
+
+        <div id="problem" class="details">
+            <h2>Problem</h2>
+            <img src="Solutions.jpg" alt="Solution Image">
+            <p><strong>Limited Availability of Local Products, Ethical Concerns, Support for Local Producers</strong></p>
+        </div>
+
+        <div id="solution" class="details">
+            <h2>Solution</h2>
+            <img src="Mak.jpeg" alt="Market Image">
+            <p>The proposed solution is an online platform dedicated to selling Pakistan-made products. The platform guarantees the authenticity and quality of its offerings, ensuring that no products from boycotted countries are sold. This approach caters to consumers who prioritize supporting local businesses and ethical shopping..</p>
+        </div>
+
+        <div id="Marketsize" class="details">
+            <h2>Market Size & Opportunity</h2>
+            <img src="Product .jpeg" alt="Product Image">
+            <p>With over 220 million people, Pakistan is the fifth most populous country in the world. This large and diverse population creates a vast market for groceries and daily essentials. The opportunities this project provides are <strong>Growing Demand for Local Products,Supporting Local Producers</strong></p>
+
+        <div id="team" class="details">
+            <h2>Team</h2>
+            <img src="Team.jpg" alt="Team Image">
+            <ul>
+                <li><strong>Savera Noor</strong> - CEO & Co-Founder</li>
+                <li><strong>Anisha Haroon</strong> - COO & Co-Founder</li>
+                <li><strong>Naeem Ahmad</strong> - Head of Product Sourcing</li>
+            </ul>
+        </div>
+
+        <div id="competition" class="details">
+            <h2>Competition</h2>
+            <img src="https://source.unsplash.com/800x400/?competition,race" alt="Competition Image">
+            <p>Daraz Grocery, HumMart, Metro Online </p>
+			</div>
+
+        <!-- Back Button -->
+        <button id="back-button" class="back-button" onclick="showKeyPoints()">Back</button>
+    </div>
+
+    <script>
+        // Show welcome message first, then key points
+        setTimeout(() => {
+            document.getElementById('welcome-message').style.display = 'none';
+            document.getElementById('key-points').style.display = 'block';
+        }, 2000);
+
+        // Function to show details of each key point
+        function showDetails(id) {
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+
+            document.getElementById('key-points').style.display = 'none';
+            document.getElementById('back-button').classList.add('active');
+        }
+
+        // Function to show key points again and hide the detail
+        function showKeyPoints() {
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.classList.remove('active'));
+
+            document.getElementById('key-points').style.display = 'block';
+            document.getElementById('back-button').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
